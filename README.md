@@ -1,4 +1,4 @@
-# run.sh 
+# run.sh
 
 A collection of shell scripts that make my every developer life easier. It's best to add the `run.sh` scripts as an alias to `.bashrc`.
 
@@ -9,6 +9,12 @@ alias run.sh=~/run.sh/run.sh
 ## Minimal requirements
 
 A bash interpreter and [fzf](https://github.com/junegunn/fzf). That's it. Everything else is required on a per script basis. For example spawning a temporary postgres container & psql shell using [shared/new-temporary-postgres.sh](shared/new-temporary-postgres.sh) requires [docker](https://docs.docker.com/).
+
+The only exception from the above description are pre-commit hooks that require the [shellharden](https://github.com/anordal/shellharden) executable. Pre-commit chooks can be installed with:
+
+```bash
+pre-commit install
+```
 
 ## License
 

@@ -22,6 +22,6 @@ cleanup() {
 }
 
 selected=$(select_available_postgres)
-container_id=$(start_tempgres $selected)
-start_psql $container_id
+container_id=$(start_tempgres "$selected")
+start_psql "$container_id"
 cleanup

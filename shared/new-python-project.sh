@@ -29,6 +29,6 @@ venv=\".venv\"" >> pyproject.toml
 read -p "Name: " venv_name; \
     selected_version=$(select_python_version); \
     uv init --no-workspace --name "$venv_name" "$venv_name" --python "$selected_version"; \
-    cd "$(pwd)/$venv_name"; \
+    cd "$PWD/$venv_name"; \
     uv venv; \
     setup_pyright

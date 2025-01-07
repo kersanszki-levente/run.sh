@@ -17,7 +17,7 @@ select_python_version() {
 }
 
 create_venv() {
-	pyenv virtualenv $1 $2; pyenv local $2; pyenv pyright
+	pyenv virtualenv "$1" "$2"; pyenv local "$2"; pyenv pyright
 }
 
 read -p "New venv name: " venv_name
