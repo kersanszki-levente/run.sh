@@ -31,4 +31,5 @@ read -p "Name: " venv_name; \
     uv init --no-workspace --name "$venv_name" "$venv_name" --python "$selected_version"; \
     cd "$PWD/$venv_name"; \
     uv venv; \
-    setup_pyright
+    setup_pyright; \
+    echo "source ./.venv/bin/active" > .envrc
